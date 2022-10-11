@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adenaike Idris|| AltSchool Front-End Engineering</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-grid">
+            <div class="bio">
+                <h1>ADENAIKE IDRIS</h1>
+            </div>
+            <div>
+                <div class="mobile">
+                    <i class="text-teal icon fas fa-bars"></i>
+                    <!-- <span class="icon btn btn-teal ">
+                        Menu
+                    </span> -->
+                    <div class="menu-list">
+                        <!-- <div> -->
+                        <a href="index.html"> About Me</a>
+                        <a href="contact.html"> Contact</a>
+                        <a href="calculator.html"> Projects</a>
+                        <a href="login.html" class="active"> Login/Register</a>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <div class="desktop">
+                    <div class="desk-list">
+                        <a href="index.html"> About Me</a>
+                        <a href="contact.html"> Contact</a>
+                        <a href="calculator.html"> Projects</a>
+                        <a href="login.html" class="active"> Login/Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr class="border-bottom">
+    <!-- Page Container -->
+    <section class="container">
+        <div class="card-body">
+            <div class="inner">
+                <div class="login-panel">
+                    <p class="display"><a href="login.html">Login</a></p>|
+                    <p class="display active"><a href="#" id="">Register</a></p>
+                </div>
+                <div class="dpanel">
+                    <div class="inputpanel">
+                        <div id="contact" class="contact box-2">
+                            <form action="#" method="POST">
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="text" id="fname" class="itext" required />
+                                        <span class="ilabel flabel">First Name </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="text" id="lname" class="itext" required />
+                                        <span class="ilabel flabel">Last Name</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="number" id="phone_no" class="itext" required />
+                                        <span class="ilabel flabel">Phone No.</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <select id="" class="slabel ilabel">
+                                        <option value="">Gender</option>
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                        <option value="">Rather not say</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="text" id="country" class="itext" required />
+                                        <span class="ilabel flabel">Country</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="text" id="State" class="itext" required />
+                                        <span class="ilabel flabel">State/Province</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="text" id="username" class="itext" required />
+                                        <span class="ilabel flabel">Username</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="password" id="password" class="itext" required />
+                                        <span class="ilabel flabel">Password</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="user-input">
+                                        <br />
+                                        <input type="password" id="cpassword" class="itext" required />
+                                        <span class="ilabel flabel">Confirm password</span>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-outline btn-outline-teal">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End Page Container -->
+
+</body>
+
+</html>

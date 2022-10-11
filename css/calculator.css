@@ -1,0 +1,120 @@
+.page-container {
+    padding: 10vh auto;
+    justify-content: center;
+    background-color: grey;
+    background-attachment: fixed;
+    overflow-y: hidden;
+}
+
+.bio h1{
+    color: var(--text-white);
+  }
+
+.container {
+    margin: auto;
+    max-width: 310px;
+    height: fit-content;
+    width: 100%;
+/*     padding: 0px 30px; */
+    border-radius: 5px;
+    animation: fadeIn 2s;
+}
+
+.control{
+    height: 54px;
+    width: 59px;
+    outline: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-top: 12px;
+    transition: 0.3s;
+    background-color: rgb(7, 122, 89);
+}
+
+  .desk-list>a{
+      color: var(--text-white);
+      border: 1px solid var(--text-white);
+  }
+
+  .desk-list>a.active{
+    background-color: var(--text-teal);
+    color: var(--text-white);
+  }
+
+.display {
+    border: 1px solid var(--text-teal);
+    text-align: right;
+    border-radius: 5px;
+    font-weight: 100;
+    font-size: 40px;
+    height: 50px;
+    padding: 7px;
+}
+
+.displaypanel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.inner {
+    max-width: 500px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    height: fit-content;
+    animation: fadeIn 2s;
+}
+
+.eql {
+    flex: 1;
+}
+
+.menu-list{
+    top: 30px !important;
+}
+
+.row-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.row-flex>button:not(.control) {
+    height: 54px;
+    width: 59px;
+    outline: none;
+    border: none;
+    color: var(--text-white);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(130deg, var(--text-teal) 55%, var(--teal-dark));
+    padding: 10px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.row-gap-1 {
+    gap: 14px;
+}
+@media (max-width: 285px){
+    .row-gap-1 {
+        gap: 5px;
+    }
+}
+
+@media (min-width: 760px){
+    .nav-grid{
+        padding-top: 1px;
+      }
+}
