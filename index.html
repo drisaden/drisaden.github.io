@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description"
+        content="I help businesses build responsive and functional website using modern tools and innovations- Check my Portfolio out">
+    <meta name="keywords"
+        content="Web design, programming, Sales funnel, nascent creator, landing page, Wordpress, web development">
+    <meta name="author" content="Drisaden: The Marketing Jewel">
+    <title>Drisaden||The Marketing Jewel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@2.52.0/dist/full.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/myimage.webp">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Nav section -->
+    <nav class="bg-diamond">
+        <div class="mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex">
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <!-- <img src="" alt="logo"> -->
+                        <span class="text-white text-lg tx-lg mx-2 font-semibold" style="font-family: 'Montserrat', sans-serif;
+                        font-weight: 600;">DRISADEN</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center md:justify-center mx-auto lg:w-full lg:pl-48 space-x-1">
+                    <a href="./index.html" class="py-4 px-2 text-white font-semibold hover:text-gray-300">Home</a>
+                    <a href="./blog.html" class="py-4 px-2 text-white font-semibold hover:text-gray-300">Blog</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBW8peSoZOhmojarMQFOwwZpj-tUlFtez0_B90i52SIkHneQ/viewform"
+                        class="py-4 px-2 text-white font-semibold hover:text-gray-300">Book Call</a>
+                    <a href="./projects.html" class="py-4 px-2 text-white font-semibold hover:text-gray-300">Projects</a>
+                    <a href="./pricing" class="py-4 px-2 text-white font-semibold hover:text-gray-300">Pricing</a>
+                    <a href="./tutorials.html"
+                        class="py-4 px-2 text-white font-semibold hover:text-gray-300">Tutorials</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <!-- <button type="button" class="text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                        aria-label="toggle menu" onclick="toggleMenu()">
+                        <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" />
+                        </svg>
+                    </button> -->
+                    <button type="button"
+                        class="cursor-pointer text-gray-500 hover:text-white focus:outline-none focus:text-white"
+                        aria-label="toggle menu" onclick="toggleMenu()">
+                        <div class="container" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="./index.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Home</a>
+            <a href="./blog.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Blog</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBW8peSoZOhmojarMQFOwwZpj-tUlFtez0_B90i52SIkHneQ/viewform"
+                class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Book Call</a>
+            <a href="./projects.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Projects</a>
+            <a href="./pricing" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Pricing</a>
+            <a href="./tutorials.html" class="block py-2 px-4 tx-sm text-white font-semibold hover:bg-gray-900">Tutorial
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header section -->
+    <header class="header-lg relative bg-gray-800 bg-cover bg-center h-screen">
+        <div class="flex justify-between items-center h-full px-6 md:px-16 lg:px-24 xl:px-32">
+            <div class="w-full md:w-1/2 text-white">
+                <div
+                    class="text-5xl md:text-6xl lg:text-7xl animate__animated animate__fadeIn animate__slow animate__delay-1s">
+                    <span class="block mb-5 leading-none font-light text-3xl md:text-4xl lg:text-5xl">Hey,
+                        Welcome!</span>
+                </div>
+                <div class="hidden" id="typed-strings">
+                    <p>Looking for a Web Designer?</p>
+                    <p>Looking for a Digital Coach?</p>
+                    <p>Looking for a Sales Optimizer?</p>
+                    <p>Looking for a Writer?</p>
+                    <p>Looking for a Mentor?</p>
+                </div>
+                <span class="leading-none font-bold text-xl md:text-xl lg:text-2xl tx-2xl" id="typed" style="font-family: 'Montserrat', sans-serif;"></span>
+                <div class="mt-10 text-5xl md:text-6xl lg:text-7xl animate__animated animate__fadeIn animate__slow animate__delay-3s">
+                    <h1 class="inline-block leading-none"
+                        style="font-family: 'Montserrat', sans-serif; font-weight: 900;"><span
+                            class="title">DRISADEN</span>
+                        <span
+                            class="block mb-0 leading-none font-light text-2xl tx-2xl md:text-2xl tx-2xl lg:text-3xl back-style relative">
+                            <span>Is your go-to person!</span>
+                        </span>
+                    </h1>
+                </div>
+                <div
+                    class="mt-10 flex flex-wrap mb-10 animate__animated animate__fadeIn animate__slow animate__delay-5s">
+                    <a href="01AdenaikeIdrisResume.pdf"
+                        class="transition duration-300 inline-block text-white bg-blue-500 py-3 px-6 rounded-md font-semibold text-lg tx-lg mr-4 mb-4"
+                        download>Download Résumé</a>
+                    <div class="inline-block">
+                    <a href="#portfolio"
+                        class="hidden md:inline-block relative link-btn tx-diamond-2 py-3 px-6 rounded-md font-semibold text-lg tx-lg mb-4 transition duration-300">Portfolio
+                    </a>
+                    <a href="#portfolio"
+                        class="inline-block md:hidden font-bold py-2 px-4 rounded-md transition duration-300 border border-blue-500 tx-diamond-2 btn-hover focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-lg tx-lg">Portfolio
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="hidden md:block md:w-1/2">
+                <img class="h-94 w-94 object-cover" src="./assets/images/myimage2.jpg" alt="Drisaden Workspace">
+            </div>
+        </div>
+        <div id="arrow-icons" class="hidden absolute md:bottom-32 bottom-24 left-2/4 flex items-center justify-center">
+            <i class="fa-sharp fa-solid fa-angles-down fa-2xl animate_bounce"></i>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"  class="" fill="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+            </svg> -->
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <main class="flex flex-wrap">
+        <article class="w-full md:w-3/4 lg:w-3/4 md:p-4 p-0">
+            <!-- About me section -->
+            <section class="bg-gray-100 py-16" id="about-me">
+                <div class="container mx-auto px-4" data-aos="fade-up">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/2 px-4 py-6 md:py-8">
+                                <h2 class="text-2xl tx-2xl font-bold mb-4">About Me</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+
+                                <p class="text-gray-700 mb-4 text-base tx-base tx-base">My name is Adenaike
+                                    Idris(Drisaden), popularly
+                                    called <strong>The Marketing Jewel</strong>. I'm a professional
+                                    website designer
+                                    and a digital expert. I help youths and young entrepreneurs leverage on the
+                                    internet's oil money using their acquired skills and available resources</p>
+                                <p class="text-gray-700 mb-4 text-base tx-base tx-base">One of my aims is to become
+                                    world-class software
+                                    developer
+                                    and seasoned digital marketer. As there are so many problems calling for solutions
+                                    in this world, therefore I wish to join the band wagon that specialises at providing
+                                    solution to the world's problems using technical approach and strategic marketing.
+                                </p>
+                            </div>
+                            <div class="md:w-1/2 image-container relative overflow-hidden">
+                                <img src="./assets/images/myimage.webp" alt="About Me Image"
+                                    class="w-full h-full object-cover object-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mx-auto px-4 mt-10" data-aos="fade-up">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="px-4 py-6 md:py-8">
+                                <h2 class="text-2xl tx-2xl font-bold mb-4">My Story</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+                                <p class="text-gray-700 mb-4 text-base tx-base tx-base">Do you ever feel like life is
+                                    going nowhere, and
+                                    you're
+                                    stuck in a hopeless cycle of frustration and despair? That was me in 2020, a young
+                                    man with big dreams but no direction.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">I was broke, depressed, and
+                                    searching for a way
+                                    out. I
+                                    spent my hard-earned salary on make-money-online programs that promised the world
+                                    but delivered nothing. I was like a ship lost at sea, with no anchor to hold onto.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">But then something changed. I
+                                    discovered the
+                                    world of web
+                                    development, and it changed my life forever. I started learning from the best in the
+                                    business, people like Fawaz (CEO, <a href="https://rayyantech.sgm.ng"
+                                        target="_blank" rel="noopener noreferrer" class="text-blue-600">Rayyan
+                                        Technologies</a>), Caleb (<a href="https://expertnaire.com" target="_blank"
+                                        rel="noopener noreferrer" class="text-blue-600">Expertnaire</a> top affiliate),
+                                    who showed me the ropes and helped me hone my skills.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">I remember the day I first
+                                    started coding. It
+                                    was like a
+                                    whole new world opened up to me, full of endless possibilities and untold riches. I
+                                    felt like I was finally on the path to success, like I had found my calling in life.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">And the best part? It wasn't
+                                    just about the
+                                    money. Sure,
+                                    web development has been a steady source of income for me, but it's also been a
+                                    source of pride and accomplishment. Every line of code I write feels like a victory,
+                                    like I'm building something that will change the world.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">Looking back on my journey, I
+                                    can't help but
+                                    feel
+                                    grateful for the people who helped me along the way. Master Fawaz and others like
+                                    him have been instrumental in my success, guiding me through the tough times and
+                                    celebrating with me in the good times.
+                                </p>
+                                <p class="text-gray-700 mb-10 text-base tx-base tx-base">If you're like I was, lost and
+                                    searching for a
+                                    way out, I
+                                    urge you to give web development a try. It may just be the lifeline you've been
+                                    looking for, the thing that will change your life forever.
+                                </p>
+                                <a href="https://themarketingjewel.com.ng/theaccelerators" target="_blank"
+                                    class="text-white bg-blue-500 py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills section -->
+            <section class="md:p-0 p-4">
+                <div class="container mx-auto mt-10">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:flex justify-between">
+                            <!-- my skills -->
+                            <div class="md:w-2/4 lg:w-2/4 p-10" data-aos="fade-up">
+                                <h2 class="text-2xl tx-2xl font-bold mb-4">My Skills</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+                                <p class="text-label tx-diamond mt-5 leading-relaxed tracking-wider">Web Designing</p>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-diamond text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                                        style="width: 98%"> 98%
+                                    </div>
+                                </div>
+                                <p class="text-label tx-diamond mt-5 leading-relaxed tracking-wider">Digital Marketing
+                                    skills</p>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-diamond text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                                        style="width: 94%"> 94%
+                                    </div>
+                                </div>
+                                <p class="text-label tx-diamond mt-5 leading-relaxed tracking-wider">Creative Designs
+                                </p>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-diamond text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                                        style="width: 90%"> 90%
+                                    </div>
+                                </div>
+                                <p class="text-label tx-diamond mt-5 leading-relaxed tracking-wider">Content Writing</p>
+                                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                                    <div class="bg-diamond text-base tx-base tx-base font-medium text-blue-100 text-center p-0.5 leading-5 rounded-full"
+                                        style="width: 95%"> 95%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-2/4 lg:w-2/4 p-10 bg-gray-100 py-6 sm:py-12" data-aos="fade-up">
+                                <h2 class="text-2xl tx-2xl font-bold mb-5">Hobbies and Interests</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+                                <p class="text-lg tx-lg my-10 leading-relaxed tracking-wide"><i
+                                        class="pr-3 tx-diamond fa fas fa-book"></i>
+                                    Reading</p>
+
+                                <p class="text-lg tx-lg my-10 leading-relaxed tracking-wide"><i
+                                        class="pr-3 tx-diamond fa fas fa-search"></i>
+                                    Researching</p>
+
+                                <p class="text-lg tx-lg my-10 leading-relaxed tracking-wide"><i
+                                        class="pr-3 tx-diamond fa fas fa-chalkboard"></i>
+                                    Teaching</p>
+
+                                <p class="text-lg tx-lg my-10 leading-relaxed tracking-wide"><i
+                                        class="pr-3 tx-diamond fa fas fa-football"></i>
+                                    Footballing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mx-auto mt-10">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:flex justify-between">
+                            <!-- my experiences -->
+                            <div class="md:w-2/4 lg:w-2/4 bg-gray-100 py-6 sm:py-12" data-aos="fade-up">
+
+                                <h2 class="text-2xl tx-2xl font-bold mb-4 ml-4 mt-5">My Experiences</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-4 relative rounded-full"></div>
+                                <div class="py-3 sm:max-w-xl sm:mx-auto w-full sm:px-0">
+
+                                    <div class="relative text-gray-700 antialiased tx-sm font-semibold">
+
+                                        <div
+                                            class="hidden sm:block w-1 bg-diamond absolute h-full left-9 transform -translate-x-1/2">
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019-2022</span><br>
+                                                            <span class="text-base tx-base tx-base">Assume the role of
+                                                                an Intern at
+                                                                Rayyan Technologies</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class=""
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019-2021</span><br>
+                                                            <span class="text-base tx-base tx-base">Assume the role of a
+                                                                Teacher at
+                                                                Sealed Nectar Ambassadors Academy</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2022</span><br>
+                                                            <span class="text-base tx-base tx-base">Became Social Media
+                                                                Manager of MSSN,
+                                                                Remo Area Council</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-gears"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-2/4 lg:w-2/4 py-6 sm:py-12" data-aos="fade-up">
+                                <h2 class="text-2xl tx-2xl font-bold mb-4 ml-4 mt-5">My Education</h2>
+                                <div class="bar h-1 w-28 bg-diamond-3 mt-2 ml-4 mb-10 relative rounded-full"></div>
+                                <div class="py-3 sm:max-w-xl sm:mx-auto w-full sm:px-0">
+
+                                    <div class="relative text-gray-700 antialiased tx-sm font-semibold">
+
+                                        <div
+                                            class="hidden sm:block w-1 bg-diamond absolute h-full left-9 transform -translate-x-1/2">
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2008-2013</span><br>
+                                                            <span class="text-base tx-base tx-base">Basic 6 certificate
+                                                                at St. Paul
+                                                                Schools</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2013-2019</span><br>
+                                                            <span class="text-base tx-base tx-base">Secondary school
+                                                                certificate at
+                                                                Methodist Comprehensive College</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019</span><br>
+                                                            <span class="text-base tx-base tx-base">Computer Literacy at
+                                                                Lafarge
+                                                                PLC</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-laptop"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019-Current</span><br>
+                                                            <span class="text-base tx-base tx-base">Web development at
+                                                                Rayyan
+                                                                Technologies</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-laptop-code"></i>
+                                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white"
+                                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            stroke-width="2"
+                                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                    </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio section -->
+            <section class="rounded shadow-lg bg-white py-10 my-10" id="portfolio">
+                <!-- <section class="rounded shadow-lg bg-white py-10 my-10 bg-gray-700 bg-cover bg-center" id="portfolio" style="background-image: url('images/workspace.jfif');"> -->
+                <div class="container mx-auto">
+                    <div class="bg-diamond py-10  bg-no-repeat bg-center bg-fixed bg-cover"
+                        style="background-image: url('./assets/images/lg-bg.png')">
+                        <h2 class="text-4xl font-bold mb-10 ml-5 text-white">Portfolio</h2>
+                        <!-- Services -->
+                        <h2 class="text-2xl tx-2xl font-bold mb-4 ml-5 mt-5 text-white">My Services</h2>
+                        <div class="bar h-1 w-28 bg-diamond-3 mt-2 ml-5 mb-10 relative rounded-full"></div>
+                        <div class="flex flex-wrap mb-20">
+                            <div class="w-full md:w-1/2 xl:w-1/4 p-3" data-aos="fade-up">
+                                <div class="rounded shadow-lg p-2 pb-5 bg-white">
+                                    <h3 class="text-lg tx-lg mb-3">Web Design</h3>
+                                    <p class="text-gray-600 mb-8 text-base tx-base tx-base">I create stunning,
+                                        high-performing websites that
+                                        capture
+                                        the user's attention and drive conversions.
+
+                                    </p>
+                                    <a href="https://wa.link/hu9wgs" target="_blank"
+                                        class="bg-blue-500 text-gray-100 py-2 px-4 rounded-md hover:bg-transparent hover:text-blue-500 transition duration-300">Hire
+                                        Me</a>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 xl:w-1/4 p-3" data-aos="fade-up">
+                                <div class="rounded shadow-lg p-2 pb-5 bg-white">
+                                    <h3 class="text-lg tx-lg mb-3">Online Coaching</h3>
+                                    <p class="text-gray-600 mb-8 text-base tx-base tx-base">I help clients reach their
+                                        goals
+                                        through
+                                        personalized
+                                        coaching that focuses on individual abilities.
+                                    </p>
+                                    <a href="https://wa.link/vzw892" target="_blank"
+                                        class="bg-blue-500 text-gray-100 py-2 px-4 rounded-md hover:bg-transparent hover:text-blue-500 transition duration-300">Get
+                                        My Mentorship</a>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 xl:w-1/4 p-3" data-aos="fade-up">
+                                <div class="rounded shadow-lg p-2 pb-5 bg-white">
+                                    <h3 class="text-lg tx-lg mb-3">Graphic Design</h3>
+                                    <p class="text-gray-600 mb-8 text-base tx-base tx-base">I create visually appealing
+                                        and result-driven
+                                        graphics that
+                                        communicate
+                                        ideas quickly and effectively.
+                                    </p>
+                                    <a href="https://wa.link/1yl1lw" target="_blank"
+                                        class="bg-blue-500 text-gray-100 py-2 px-4 rounded-md hover:bg-transparent hover:text-blue-500 transition duration-300">Hire
+                                        Me</a>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 xl:w-1/4 p-3" data-aos="fade-up">
+                                <div class="rounded shadow-lg p-2 pb-5 bg-white">
+                                    <h3 class="text-lg tx-lg mb-3">Content Creation</h3>
+                                    <p class="text-gray-600 mb-8 text-base tx-base tx-base">I create engaging content
+                                        that
+                                        captivates an
+                                        audience,
+                                        drives action and build authority.</p>
+                                    <a href="https://wa.link/xzq49v" target="_blank"
+                                        class="bg-blue-500 text-gray-100 py-2 px-4 rounded-md hover:bg-transparent hover:text-blue-500 transition duration-300">Book
+                                        A Gig</a>
+                                </div>
+                                <!-- <div class="relative">
+                                <img src="./assets/images/workspace.jfif" alt="Project 1" class="w-full h-auto">
+                                <div class="overlay absolute top-0 left-0 w-full h-full bg-gray-800 opacity-80 transition-all duration-300">
+                                    <div class="text-white absolute bottom-0 left-0 p-4">
+                                        <h2 class="text-lg tx-lg font-bold mb-2">Service 4</h2>
+                                        <p class="tx-sm mb-4">Description of Service 4 goes here. Lorem ipsum
+                                            dolor sit
+                                            amet, consectetur adipiscing elit.</p>
+                                        <a href="#"
+                                            class="uppercase bg-blue-500 border-2 border-blue-500 py-2 px-4 rounded-md hover:bg-transparent hover:text-blue-500 transition duration-300">Learn
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Projects -->
+                    <h2 class="text-2xl tx-2xl font-bold mb-4 ml-5 mt-10">My Recent Projects</h2>
+                    <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-5 relative rounded-full"></div>
+                    <div class="mx-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="image-container relative overflow-hidden" data-aos="fade-up">
+                            <img src="./assets/images/Santos_Portfolio.png"
+                                alt="A example of a graphic designer portfolio" class="w-full h-auto">
+                            <div class="overlay absolute top-0 left-0 w-full h-full bg-gray-800 opacity-80 transition-all duration-300">
+                                <div class="text-white absolute bottom-0 left-0 p-4">
+                                    <h3 class="text-lg tx-lg font-bold mb-2">Portfolio Design</h3>
+                                    <p class="text-base tx-base tx-base mb-4">Just started building this portfolio for a
+                                        graphic
+                                        designer
+                                    </p>
+                                    <a href="https://themarketingjewel.com.ng/SantosPortfolio" target="_blank"
+                                        class="bg-white text-gray-800 py-2 px-4 rounded-md inline-block">View
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container relative overflow-hidden" data-aos="fade-up">
+                            <img src="./assets/images/amara-landing-page.webp" alt="internet-marketing-business-landing-page" class="mb-0 w-full h-auto">
+                            <div class="overlay absolute top-0 left-0 w-full h-full bg-gray-800 opacity-80 transition-all duration-300">
+                                <div class="text-white absolute bottom-0 left-0 p-4">
+                                    <h3 class="text-lg tx-lg font-bold mb-2">Landing Page</h3>
+                                    <p class="text-base tx-base tx-base mb-4">Built for a client to promote her Internet
+                                        Marketing
+                                        business.
+                                    </p>
+                                    <a href="https://amaraelufowoju.com/training" target="_blank"
+                                        class="bg-white text-gray-800 py-2 px-4 rounded-md  inline-block">View
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container relative overflow-hidden" data-aos="fade-up">
+                            <img src="./assets/images/countdown-page.webp" alt="A countdown project example"
+                                class="w-full h-auto">
+                            <div class="overlay absolute top-0 left-0 w-full h-full bg-gray-800 opacity-80 transition-all duration-300">
+                                <div class="text-white absolute bottom-0 left-0 p-4">
+                                    <h3 class="text-lg tx-lg font-bold mb-2">Countdown</h3>
+                                    <p class="text-base tx-base tx-base mb-4">Countdown page created for Muslims before
+                                        Ramadan
+                                    </p>
+                                    <a href="https://themarketingjewel.com.ng/1444-ramadan-countdown" target="_blank"
+                                        class="bg-white text-gray-800 py-2 px-4 rounded-md inline-block">View
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image-container relative overflow-hidden" data-aos="fade-up">
+                            <img src="./assets/images/amsb.webp" alt="Online course website designer"
+                                class="w-full h-auto">
+                            <div
+                                class="overlay absolute top-0 left-0 w-full h-full bg-gray-800 opacity-80 transition-all duration-300">
+                                <div class="text-white absolute bottom-0 left-0 p-4">
+                                    <h3 class="text-lg tx-lg font-bold mb-2">Course Website</h3>
+                                    <p class="text-base tx-base tx-base mb-4">Create this page for a course creator to
+                                        promote his
+                                        course
+                                    </p>
+                                    <a href="https://digitalskillsacademy.com.ng/amsb/" target="_blank"
+                                        class="bg-white text-gray-800 py-2 px-4 rounded-md inline-block">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Counter section -->
+                    <div class="py-16 counter-section">
+                        <div class="text-center">
+                            <h2 class="text-2xl tx-2xl font-bold mb-2">My Achievements</h2>
+                            <div class="bar mx-auto h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+                            <p class="text-lg tx-lg font-semibold mb-8">I'm proud of my numbers</p>
+                        </div>
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full flex flex-col justify-center items-center sm:w-1/2 md:w-1/4 p-4">
+                                <div
+                                    class="text-center circular-progress relative h-36 w-36 rounded-full flex items-center justify-center shadow-lg transition duration-500 ease-in-out">
+                                    <div
+                                        class="z-10 flex flex-col justify-center items-center text-5xl font-bold mx-auto counter">
+                                        <span class="value-container  tx-diamond">31</span>
+                                    </div>
+                                </div>
+                                <p class="text-center text-lg tx-lg font-semibold my-4">Projects Done</p>
+                            </div>
+                            <div class="w-full flex flex-col justify-center items-center sm:w-1/2 md:w-1/4 p-4">
+                                <div
+                                    class="text-center circular-progress relative h-36 w-36 rounded-full flex items-center justify-center shadow-lg transition duration-500 ease-in-out">
+                                    <div
+                                        class="z-10 flex flex-col justify-center items-center text-5xl font-bold mx-auto counter">
+                                        <span class="value-container  tx-diamond">30</span>
+                                    </div>
+                                </div>
+                                <p class="text-center text-lg tx-lg font-semibold my-4">Happy Customers</p>
+                            </div>
+                            <div class="w-full flex flex-col justify-center items-center sm:w-1/2 md:w-1/4 p-4">
+                                <div
+                                    class="text-center circular-progress relative h-36 w-36 rounded-full flex items-center justify-center shadow-lg transition duration-500 ease-in-out">
+                                    <div
+                                        class="z-10 flex flex-col justify-center items-center text-5xl font-bold mx-auto counter">
+                                        <span class="value-container  tx-diamond">29</span>
+                                    </div>
+                                </div>
+                                <p class="text-center text-lg tx-lg font-semibold my-4">Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials section -->
+            <section class="bg-gray-100 w-full p-4 bg-no-repeat bg-center bg-fixed bg-cover"
+                style="background-image: url('./assets/images/lg-bg.png')">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="lg:text-center">
+                        <h2 class="mt-2 text-2xl tx-2xl leading-8 font-extrabold tracking-tight text-white">
+                            What my clients say
+                        </h2>
+                        <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 sm:mx-4 md:mx-auto relative rounded-full">
+                        </div>
+                        <p class="mt-4 max-w-3xl text-lg tx-lg text-white lg:mx-auto">
+                            Here's what some of my satisfied clients have to say about working with me:
+                        </p>
+                    </div>
+
+                    <div class="mt-10">
+                        <div class="mx-auto  p-4 rounded-box carousel">
+                            <div
+                                class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-white rounded-lg shadow-md carousel-item">
+                                <div class="w-full md:flex items-start justify-between">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-12 w-12 rounded-full" src="./assets/images/danielsampson.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="ml-4">
+                                            <h3 class="text-lg tx-lg font-medium text-gray-900">Daniel Sampson</h3>
+                                            <p class="text-gray-500">Owner, Ghostwriting Income Generator Course</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex pt-3 pb-10 sm:justify-center sm:mr-16 md:mr-0">
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-2 text-gray-600 text-base tx-base">
+                                    <p>I have worked with Adenaike Idris on multiple occasions, and I can confirm that
+                                        he leaves me impressed every single time.
+
+                                        Adenaike Idris designs my sales and landing pages brilliantly, leaving me
+                                        impressed and fulfilled.
+
+                                        I recommend him anytime and any day.</p>
+                                    <i
+                                        class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
+                                </div>
+                            </div>
+                            <div
+                                class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-white rounded-lg shadow-md carousel-item">
+                                <div class="w-full md:flex items-start justify-between">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-12 w-12 rounded-full" src="./assets/images/amibelle.webp"
+                                                alt="">
+                                        </div>
+                                        
+        <div class="ml-4">
+                                            <h3 class="text-lg tx-lg font-medium text-gray-900">Amara Elufowoju</h3>
+                                            <p class="text-gray-500">7-figure Digital Entrepreneur</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex pt-3 pb-10 sm:justify-center sm:mr-16 md:mr-0">
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-2 text-gray-600 text-base tx-base">
+                                    <p>Idris knows his onions well.
+                                        I contacted him for a landing page for my affiliate product and he promised to
+                                        deliver quality.
+                                        He went ahead and gave me a high converting landing page that no lead could
+                                        resist.
+                                        That page has brought in the highest ROI since I started affiliate marketing and
+                                        I am glad I engaged him.</p>
+                                    <i
+                                        class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
+                                </div>
+                            </div>
+                        <div
+                                class="relative flex flex-col my-10 ml-1 mx-auto w-11/12 md:w-2/5 p-6 bg-white rounded-lg shadow-md carousel-item">
+                                <div class="w-full md:flex items-start justify-between">
+                                    <div class="flex">
+                                        <div class="flex-shrink-0">
+                                            <img class="h-12 w-12 rounded-full" src="./assets/images/ann_ebere.jpg"
+                                                alt="">
+                                        </div>
+                                        
+        <div class="ml-4">
+                                            <h3 class="text-lg tx-lg font-medium text-gray-900">Ann Ebere</h3>
+                                            <p class="text-gray-500">CEO, Ebylet Dynamic Services</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex pt-3 pb-10 sm:justify-center sm:mr-16 md:mr-0">
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                        <svg class="w-4 h-4 text-yellow-500 mr-1" fill="currentColor"
+                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 0l3.117 6.383 6.953.998-5.032 4.894 1.186 7.176L10 15.455l-6.224 3.997 1.186-7.176L0.93 7.381 7.883 6.383 10 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-full mt-2 text-gray-600 text-base tx-base">
+                                    <p>Adenaike Idris is an exemplary professional online Coach whom I wholeheartedly recommend to anyone seeking success in the online space. His honesty, attentiveness, and gentle mentoring approach serves as constant motivators for learning and growth. He is truly passionate about the development of his students making him the best mentor I have ever encountered.</p>
+                                    <i
+                                        class="fas fa-quote-right absolute -bottom-8 right-0 text-7xl text-gray-400 mt-10 ml-6"></i>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery section -->
+            <section id="gallery" class="md:py-16 p-4 animated">
+                <h2 class="text-2xl font-bold mb-4 ml-1 mt-5">My Recent Gallery</h2>
+                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-1 relative rounded-full"></div>
+                <div class="container mx-auto w-full sm:px-4 px-0 md:w-2/5 relative h-1/2">
+                    <div class="mySlides image-container relative overflow-hidden h-96 w-auto" id="myslides">
+                        <div class="tx-sm text-gray-500 absolute top-0 py-2 px-3" id="photo-number"></div>
+                        <img src="" class="w-full h-fit" id="image">
+                    </div>
+                    <div class="flex w-full overflow-x-scroll" id="second-s">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7th section -->
+            <!-- <section class="bg-white py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-4xl font-bold mb-8">My Certificates</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                        <div class="border rounded-md overflow-hidden">
+                            <a href="#" class="block hover:opacity-75 transition">
+                                <img src="./assets/images/cert-1.jfif" alt="Certificate 1" class="w-full">
+                            </a>
+                            <div class="bg-gray-100 px-4 py-2">
+                                <h3 class="font-bold text-lg tx-lg mb-2">Certificate 1</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                        <div class="border rounded-md overflow-hidden">
+                            <a href="#" class="block hover:opacity-75 transition">
+                                <img src="./assets/images/cert-2.jfif" alt="Certificate 1" class="w-full">
+                            </a>
+                            <div class="bg-gray-100 px-4 py-2">
+                                <h3 class="font-bold text-lg tx-lg mb-2">Certificate 1</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                        <div class="border rounded-md overflow-hidden">
+                            <a href="#" class="block hover:opacity-75 transition">
+                                <img src="./assets/images/cert-3.jfif" alt="Certificate 1" class="w-full">
+                            </a>
+                            <div class="bg-gray-100 px-4 py-2">
+                                <h3 class="font-bold text-lg tx-lg mb-2">Certificate 1</h3>
+                                <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                    id dolor id nibh ultricies vehicula ut id elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Blog section  -->
+            <section class="w-full md:py-16 p-6" id="blog">
+                <h2 class="text-2xl tx-2xl font-bold mb-4 ml-1 mt-5">Week's Blog</h2>
+                <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-1 relative rounded-full"></div>
+<div id="populate-Recent">
+  
+</div>
+                <!--<div class="image-container relative overflow-hidden my-10 max-w-md mx-auto rounded shadow-lg hover:shadow-xl"
+                    data-aos="fade-up">
+                    <img src="./assets/images/howaiismakingsmallbizrevenue.jfif" alt=""
+                        class="cursor-pointer w-full h-auto object-cover">
+
+                    <div
+                        class="overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black transition-all duration-300">
+                        <div class="p-4 flex justify-between items-center mb-2">
+                            <span class="font-semibold text-white tx-sm">May 1, 2023</span>
+                            <span class="bg-white rounded-lg px-3 py-1 tx-sm text-gray-600">Tech</span>
+                        </div>
+                        <div class="text-white absolute bottom-0 left-0 p-4">
+                            <a href="#" target="_blank">
+                                <div class="font-bold md:text-xl text-base tx-base tx-base mb-2">How AI is helping small
+                                    owners manage
+                                    their budget
+                                    and reduce cost of service</div>
+                            </a>
+                            <div class="flex justify-between items-center">
+                                <a href="#" target="_blank" rel="noopener"
+                                    class="ml-1 link-btn my-3 inline-block text-white relative leading-none font-light text-sm">Read
+                                    More</a>
+                                <div class="flex items-center justify-center">
+                                    <div class="group relative">
+                                        <i class="fa-solid fa-share-nodes cursor-pointer transition-colors duration-300 ease-in-out group-hover:text-gray-500 fa-xl"
+                                            title="share this post"></i>
+                                        <div
+                                            class="hidden absolute -top-28 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-2 space-y-2 group-hover:block">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=[URL]&quote=[Check out this blog post]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?text=[Check out this blog post]&url=[URL]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/share?url=[URL]&caption=[CAPTION]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-red-500"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=[URL]&title=[TITLE]&summary=[SUMMARY]"
+                                                class="text-gray-500 hover:text-black" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-10 max-w-md mx-auto rounded shadow-lg hover:shadow-xl image-container relative overflow-hidden"
+                    data-aos="fade-up">
+                    <img src="./assets/images/10internetfraud.jfif" alt=""
+                        class="cursor-pointer w-full h-auto object-cover">
+                    <div
+                        class="overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black transition-all duration-300">
+                        <div class="p-4 flex justify-between items-center mb-2">
+                            <span class="font-semibold text-white tx-sm">May 1, 2023</span>
+                            <span class="bg-white rounded-lg px-3 py-1 tx-sm text-gray-600">Tech</span>
+                        </div>
+                        <div class="text-white absolute bottom-0 left-0 p-4">
+                            <a href="#" target="_blank">
+                                <div class="font-bold md:text-xl text-base tx-base tx-base mb-2">10 Internet frauds you
+                                    must beware of
+                                    and how to avoid them</div>
+                            </a>
+                            <div class="flex justify-between items-center">
+                                <a href="#" target="_blank" rel="noopener"
+                                    class="ml-1 link-btn my-3 inline-block text-white relative leading-none font-light text-sm">Read
+                                    More</a>
+                                <div class="flex items-center justify-center">
+                                    <div class="group relative">
+                                        <i class="fa-solid fa-share-nodes cursor-pointer transition-colors duration-300 ease-in-out group-hover:text-gray-500 fa-xl"
+                                            title="share this post"></i>
+                                        <div
+                                            class="hidden absolute -top-28 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-2 space-y-2 group-hover:block">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=[URL]&quote=[Check out this blog post]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?text=[Check out this blog post]&url=[URL]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/share?url=[URL]&caption=[CAPTION]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-red-500"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=[URL]&title=[TITLE]&summary=[SUMMARY]"
+                                                class="text-gray-500 hover:text-black" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-10 max-w-md mx-auto rounded shadow-lg hover:shadow-xl image-container relative overflow-hidden"
+                    data-aos="fade-up">
+                    <img src="./assets/images/4waystomonetiseyourblog.jfif" alt=""
+                        class="cursor-pointer w-full h-auto object-cover">
+                    <div
+                        class="overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black transition-all duration-300">
+                        <div class="p-4 flex justify-between items-center mb-2">
+                            <span class="font-semibold text-white tx-sm">May 1, 2023</span>
+                            <span class="bg-white rounded-lg px-3 py-1 tx-sm text-gray-600">Tech</span>
+                        </div>
+                        <div class="text-white absolute bottom-0 left-0 p-4">
+                            <a href="#" target="_blank">
+                                <div class="font-bold md:text-xl text-base tx-base tx-base mb-2">4 profitable ways to
+                                    monetise your
+                                    website with no technical knowledge</div>
+                            </a>
+                            <div class="flex justify-between items-center">
+                                <a href="#" target="_blank" rel="noopener"
+                                    class="ml-1 link-btn my-3 inline-block text-white relative leading-none font-light text-sm">Read
+                                    More</a>
+                                <div class="flex items-center justify-center">
+                                    <div class="group relative">
+                                        <i class="fa-solid fa-share-nodes cursor-pointer transition-colors duration-300 ease-in-out group-hover:text-gray-500 fa-xl"
+                                            title="share this post"></i>
+                                        <div
+                                            class="hidden absolute -top-28 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-2 space-y-2 group-hover:block">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=[URL]&quote=[Check out this blog post]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?text=[Check out this blog post]&url=[URL]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/share?url=[URL]&caption=[CAPTION]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-red-500"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=[URL]&title=[TITLE]&summary=[SUMMARY]"
+                                                class="text-gray-500 hover:text-black" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <!-- Contact section -->
+            <section class="w-full bg-gray-100 my-4" id="contactme">
+                <div class="w-full h-full flex flex-row justify-center items-center">
+                    <div class="w-full py-10 px-4">
+                        <div class="text-center text-2xl tx-2xl font-bold">Hire Me</div>
+                        <div class="bar mx-auto h-1 w-28 bg-diamond-3 mt-2 mb-10 relative rounded-full"></div>
+                        <div>
+                            <p class="text-base tx-base tx-base mt-5">
+                                Are you looking to hire a professional web developer with years of experience? Look no
+                                further! I specialize in HTML, CSS, and have great experience in JavaScript and React.
+                            </p>
+                            <p class="text-base tx-base tx-base mt-5">
+                                With my expertise in various web frameworks such as Bootstrap, Tailwind, and Bulma, I
+                                can
+                                develop
+                                responsive and user-friendly websites. Additionally, I am familiar with various versions
+                                of
+                                third-party website builders such as <a href="https://wordpress.com" target="_blank"
+                                    rel="noopener" title="Wordpress" class="tx-diamond font-bold">Wordpress</a>, <a
+                                    href="https://carrd.co" target="_blank" rel="noopener" title="Carrd"
+                                    class="tx-diamond font-bold">Carrd.co</a> and <a href="https://systeme.io"
+                                    target="_blank" rel="noopener" title="Systeme"
+                                    class="tx-diamond font-bold">Systeme.io</a> .
+                            </p>
+                            <p class="text-base tx-base tx-base mt-5">
+                                I am also well-versed in using version control systems such as Git and GitHub, ensuring
+                                that
+                                your
+                                code is always well-maintained and up-to-date.
+                            </p>
+                            <p class="text-base tx-base tx-base mt-5">
+                                If you're ready to take your next project to the next level? Let's work together!
+                               Send me a mail:
+                            </p>
+                        </div>
+
+                        <div class="w-full flex-shrink-0 w-full md:flex-shrink md:flex-shrink-0 md:w-auto">
+                            <div id="contact"
+                                class="w-full md:mx-auto md:w-2/4 box-2 bg-white max-w-full py-10 px-5 border border-gray-400 rounded-lg mt-16 mr-5 mb-10 shadow-md h-500">
+                                <form action="#" id="hire-form">
+                                    <div class="w-full">
+                                        <div class="user-input relative w-full mb-4">
+                                            <br />
+                                            <input type="text" id="name" name="name"
+                                                class="itext py-2 px-4 w-full outline-none text-base tx-base tx-base border border-gray-300 shadow rounded-lg text-blue-800"
+                                                required />
+                                            <span
+                                                class="mt-3  ilabel text-lg tx-lg font-semibold text-black tracking-wider flabel absolute top-2/4 left-5 transform -translate-y-1/2 pointer-events-none transition-all duration-200">Name</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="user-input relative w-full mb-8">
+                                            <br />
+                                            <input type="email" id="email" name="email"
+                                                class="itext py-2 px-4 w-full outline-none text-base tx-base tx-base border border-gray-300 shadow rounded-lg text-blue-800"
+                                                required />
+                                            <span
+                                                class="mt-3 ilabel text-lg tx-lg font-semibold text-black tracking-wider flabel absolute top-2/4 left-5 transform -translate-y-1/2 pointer-events-none transition-all duration-200">Email</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <select id="" style="font-size: 1.125rem; font-family: 'Montserrat', sans-serif;
+                                        font-weight: 500;"
+                                            class="slabel py-2 px-4 w-full outline-none border border-gray-300 shadow rounded-lg ilabel text-lg tx-lg font-semibold text-black tracking-wider">
+                                            <option value="">Priority</option>
+                                            <option value="">Personal</option>
+                                            <option value="">Business</option>
+                                            <option value="">Coaching</option>
+                                            <option value="">Report</option>
+                                            <option value="">Feedback</option>
+                                            <option value="">Suggestion</option>
+                                            <option value="">Others</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="user-input relative w-full my-4">
+                                            <br />
+                                            <textarea id="message" name="message"
+                                                class="slabel py-2 px-6 w-full outline-none text-base tx-base tx-base border border-gray-300 shadow rounded-md tx-diamond  textarea h-36 text-dark resize-none"
+                                                placeholder="">Hi, Drisaden. I want to secure a deal with you for [your priority here] purposes. Kindly get back to ASAP. Thanks</textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" id="submit-btn"
+                                        class="font-bold py-2 px-4 rounded-md transition duration-300 border border-blue-500 tx-diamond-2 btn-hover focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-lg tx-lg">Send
+                                        Message</button>
+                                </form>
+                                <div class="fixed top-0 left-0 right-0 bottom-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden"
+                                    id="modal">
+                                    <div class="bg-white p-8 rounded-md shadow-md mx-10">
+                                        <h2 class="text-2xl tx-2xl font-bold mb-4 ">Your message has sent successfully!
+                                        </h2>
+                                        <p class="mb-4 text-base tx-base tx-base">Kindly check your mailbox for my
+                                            response. You can
+                                            click
+                                            the button below to book a call with me directly. Thanks</p>
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBW8peSoZOhmojarMQFOwwZpj-tUlFtez0_B90i52SIkHneQ/viewform"
+                                            target="_blank"
+                                            class="bg-blue-500 btn-hover text-white font-bold py-2 px-4 rounded text-lg tx-lg">
+                                            Book Call
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+        <!-- Aside section -->
+        <aside class="bg-gray-100 text-gray-800 md:py-5 p-4 md:w-1/4 lg:w-1/4">
+            <div class="py-12">
+                <div class="flex flex-col md:flex-row">
+                    <div class="my-auto w-full">
+                        <h2 class="px-3 text-2xl tx-2xl font-bold">Free Resources</h2>
+                        <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-3  relative rounded-full"></div>
+                        <p class="px-3 my-4 text-label">Download free books, video trainings and other resources here.
+                        </p>
+                        <div class="border-b border-gray-400"></div>
+                        <div class="flex flex-col">
+                            <div class="px-3 flex flex-row my-6">
+                                <div class="mr-4 w-full image-container relative overflow-hidden">
+                                    <img class="w-full h-36" src="./assets/images/free_e-books_on_various_topics.jpg"
+                                        alt="Download free e-books on various topics">
+                                </div>
+                                <div class="w-full">
+                                    <h3 class="font-bold">E-Books</h3>
+                                    <p class="my-4 text-base tx-base tx-base">Download free e-books on various topics.
+                                    </p>
+                                    <a href="https://drive.google.com/drive/folders/14YFdfgqai5GLdYmbXP6FTPx9IVYBt6l5?usp=drive_link"
+                                        target="_blank"
+                                        class="link-btn my-3 inline-block tx-diamond  font-bold md:font-medium relative leading-none">Download
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-400"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="px-3 flex flex-row my-6">
+                                <div class="mr-4 w-full image-container relative overflow-hidden">
+                                    <img class="w-full h-36" src="./assets/images/training.avif"
+                                        alt="Affiliate Marketing Courses Now">
+                                </div>
+                                <div class="w-full">
+                                    <h3 class="font-bold">Video Courses</h3>
+                                    <p class="my-4 text-base tx-base tx-base">Enrol for Internet Marketing Courses Now
+                                    </p>
+                                    <a href="./tutorials.html" target="_blank"
+                                        class="link-btn my-3 inline-block tx-diamond font-bold md:font-medium   relative leading-none">Enrol
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-400"></div>
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="px-3 flex flex-row my-6">
+                                <div class="mr-4 w-full image-container relative overflow-hidden">
+                                    <img class="w-full h-36" src="./assets/images/template.avif"
+                                        alt="Free Design Templates on various topics">
+                                </div>
+                                <div class="w-full">
+                                    <h3 class="font-bold">Templates</h3>
+                                    <p class="my-4 text-base tx-base tx-base">Download free Design Templates on various
+                                        topics.</p>
+                                    <a href="https://uigoodies.com" target="_blank"
+                                        class="link-btn my-3 inline-block  tx-diamond   font-bold md:font-medium relative  leading-none">Download
+                                        Now</a>
+                                </div>
+                            </div>
+                            <div class="border-b border-gray-400"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="py-12">
+                <h2 class="text-2xl tx-2xl font-bold mb-8 text-center">Must-Watch</h2>
+                 <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 ml-10 relative rounded-full"></div>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full mb-4 px-2">
+                        <a href="#" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <img src="path/to/video-thumbnail-1.jpg" alt="Video thumbnail" class="w-full rounded-t-lg">
+                            <div class="p-4">
+                                <h3 class="text-lg tx-lg font-medium mb-2">Title of Video</h3>
+                                <p class="text-gray-600 text-base tx-base tx-base">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Fusce faucibus commodo orci, vel auctor mauris placerat eu.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-full mb-4 px-2">
+                        <a href="#" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <img src="path/to/video-thumbnail-2.jpg" alt="Video thumbnail" class="w-full rounded-t-lg">
+                            <div class="p-4">
+                                <h3 class="text-lg tx-lg font-medium mb-2">Title of Video</h3>
+                                <p class="text-gray-600 text-base tx-base tx-base">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Fusce faucibus commodo orci, vel auctor mauris placerat eu.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="w-full mb-4 px-2">
+                        <a href="#" class="block bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                            <img src="path/to/video-thumbnail-3.jpg" alt="Video thumbnail" class="w-full rounded-t-lg">
+                            <div class="p-4">
+                                <h3 class="text-lg tx-lg font-medium mb-2">Title of Video</h3>
+                                <p class="text-gray-600 text-base tx-base tx-base">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. Fusce faucibus commodo orci, vel auctor mauris placerat eu.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+
+        </aside>
+    </main>
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-4 right-4 bg-diamond btn-hover text-white h-16 w-16 flex justify-center items-center rounded-full border border-blue-500 shadow-lg transition duration-500 ease-in-out">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer section -->
+    <footer class="bg-diamond text-white">
+        <div class="container mx-auto px-4 lg:px-10 py-12 flex flex-wrap justify-between">
+
+            <!-- Personal Info -->
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-xl font-bold mb-4">Personal Info</h3>
+                <!-- <p class="tx-sm mt-10">Personal Address:</p> -->
+                <a href="https://www.google.com/maps/search/?api=1&query=RMW2%2BQRC+Sagamu" target="_blank">
+                    <p class="my-4"><i class="fas fa-home mr-2"></i> 17b, Araromi street, Baruwa</p>
+                    <p class="my-4"><i class="fas fa-map-marker-alt mr-2"></i> Sagamu, Ogun State, Nigeria</p>
+                </a>
+                <p class="my-4"><i class="fas fa-phone mr-2"></i><a class="text-blue-500" href="tel:+2349036371010">
+                        (+234) 903 637 (Click to call)</a></p>
+            </div>
+
+            <!-- Nav link -->
+            <div class="w-full md:w-1/2 lg:w-1/5 mb-6">
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul>
+                    <li class="my-3"><a href="./index.html" class="link-btn inline-block relative leading-none">Home</a>
+                    </li>
+                    <li class="my-3"><a href="./projects.html"
+                            class="link-btn inline-block relative leading-none">Projects</a></li>
+                    <li class="my-3"><a
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfBW8peSoZOhmojarMQFOwwZpj-tUlFtez0_B90i52SIkHneQ/viewform"
+                            class="link-btn inline-block relative leading-none">Book A Call</a></li>
+                          
+                    <li class="my-3"><a href="./privacy_policy.html" class="link-btn inline-block relative leading-none"
+                            target="_blank" rel="noopener">Privacy Policy</a></li>
+                    <li class="my-3"><a href="./terms_of_services.html"
+                            class="link-btn inline-block relative leading-none" target="_blank" rel="noopener">Terms of
+                            Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6">
+                <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                <p class="text-base tx-base tx-base">Sign up for my newsletter and stay up to date with my latest news
+                    and events.</p>
+                <form class="mt-4">
+                    <div class="flex flex-wrap items-center">
+                        <!-- <input type="email" placeholder="Enter your email" class="w-full text-gray-700 px-4 py-2 rounded-lg shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300"> -->
+                        <!-- <button type="submit"
+                            class="mt-4 font-bold py-2 px-4 rounded-md transition duration-300 border border-white text-white btn-hover focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-lg tx-lg">
+                            Subscribe
+                        </button> -->
+                    </div>
+                    <script async data-uid="068724265b" src="https://drisaden.ck.page/068724265b/index.js"></script>
+                </form>
+            </div>
+
+            <!-- Social icons -->
+            <div class="w-full md:w-1/2 lg:w-1/4 mb-6 lg:mx-auto">
+                <h3 class="text-xl font-bold mb-4">Follow me on These Platforms</h3>
+                <div class="flex justify-between">
+                    <a href="https://twitter.com/adenaike_idris" class="text-white hover:text-blue-400" target="_blank"
+                        rel="noopener" title="Twitter">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://m.facebook.com/aden.edriiz/" class="text-white hover:text-blue-600" target="_blank"
+                        rel="noopener" title="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/2349036371010?text=Hi,%20I%20want%20to%20know%20more%20about%20you.%20and%20also%20learn%20from%20you.%20Can%20I%20connect%20with%20you?"
+                        class="text-white hover:text-green-500" target="_blank" rel="noopener" title="WhatsApp">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com/adenaike_idris" class="text-white hover:text-pink-600"
+                        target="_blank" rel="noopener" title="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adenaikeidris/" class="text-white hover:text-blue-600"
+                        target="_blank" rel="noopener" title="LinkedIn">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/drisaden" class="text-white hover:text-gray-600" target="_blank"
+                        rel="noopener" title="GitHub"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://t.me/dris_Jewel" class="text-white hover:text-blue-600" target="_blank"
+                        rel="noopener" title="Telegram"><i class="fab fa-telegram-plane fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 pb-4">
+            <p class="text-sm">&copy; 2023 Adenaike Idris. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/scroll.js"></script>
+     <script src="./assets/js/main.js"></script>
+    <script>
+      window.onload = function () {
+fetch('https://www.googleapis.com/blogger/v3/blogs/4195482384384708356/posts?key=AIzaSyAH6Wex5qpSlUeNOds4OvtCSuoUK8c66kY')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        const recentItems = data.items.filter(item => item.labels.includes('Recent')).slice(0, 3);
+
+        const populateRecentElement = document.getElementById('populate-Recent');
+
+        recentItems.forEach(item => {
+            const src = item.content.match(/<img[^>]*src="([^"]*)"/)?.[1];
+            // console.log(src);
+
+            populateRecentElement.innerHTML += `<div class="image-container relative overflow-hidden my-10 max-w-md mx-auto rounded shadow-lg hover:shadow-xl"
+                    data-aos="fade-up">
+                    <img src="${src}" alt=""
+                        class="cursor-pointer w-full h-auto object-cover">
+
+                    <div
+                        class="overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black transition-all duration-300">
+                        <div class="p-4 flex justify-between items-center mb-2">
+                            <span class="font-semibold text-white tx-sm">${item.published.split('T')[0]}</span>
+                            <span class="bg-white rounded-lg px-3 py-1 tx-sm text-gray-600">${item.labels}</span>
+                        </div>
+                        <div class="text-white absolute bottom-0 left-0 p-4">
+                            <a href="https://adenaikeidris.com.ng/single.html?id=${item.id}" target="_blank">
+                                <div class="font-bold md:text-xl text-base tx-base tx-base mb-2">${item.title}</div>
+                            </a>
+                            <div class="flex justify-between items-center">
+                                <a href="https://adenaikeidris.com.ng/single.html?id=${item.id}" target="_blank" rel="noopener"
+                                    class="ml-1 link-btn my-3 inline-block text-white relative leading-none font-light text-sm">Read
+                                    More</a>
+                                <div class="flex items-center justify-center">
+                                    <div class="group relative">
+                                        <i class="fa-solid fa-share-nodes cursor-pointer transition-colors duration-300 ease-in-out group-hover:text-gray-500 fa-xl"
+                                            title="share this post"></i>
+                                        <div
+                                            class="hidden absolute -top-28 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow-lg p-2 space-y-2 group-hover:block">
+                                            <a href="https://www.facebook.com/sharer/sharer.php?u=[URL]&quote=[Check out this blog post]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="https://twitter.com/intent/tweet?text=[Check out this blog post]&url=[URL]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-blue-500"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="https://www.instagram.com/share?url=[URL]&caption=[CAPTION]"
+                                                target="_blank" rel="noopener noreferrer"
+                                                class="text-gray-500 hover:text-red-500"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=[URL]&title=[TITLE]&summary=[SUMMARY]"
+                                                class="text-gray-500 hover:text-black" target="_blank"
+                                                rel="noopener noreferrer">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+        });
+
+    })
+    .catch(error => {
+        console.log('Error fetching data:', error);
+    });
+};
+    </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1300,
+            delay: 400,
+            once: true
+        });
+    </script>
+</body>
+
+</html>
