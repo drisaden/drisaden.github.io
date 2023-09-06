@@ -345,10 +345,9 @@ fetch('https://www.googleapis.com/blogger/v3/blogs/1953737097095782065/posts?key
             const href = item.content.match(/<a[^>]*href="([^"]*)"/)?.[1];
 
             populateWebElement.innerHTML +=  
-            `<div class="w-full md:w-1/2 p-4 bg-white">
+            `<div class="w-full md:w-1/2 p-4 bg-white shadow-lg my-5">
             <div class="relative">
-            <span class="absolute left-0 bottom-0 bg-black text-white py-1 px-3 tx-sm" id="labels">${item.labels}</span>
-            <img src="${src}" alt="Image 1"  class="w-full h-64 object-cover mb-4">
+            <img src="${src}" alt="${item.title}"  class="w-full h-64 object-cover mb-4">
             </div>
             <a href="${href}" target="_blank"><h2 class="text-xl font-bold mb-2" id="title">${item.title}</h2></a>
             <p class="flex items-center justify-left mb-4"
@@ -392,10 +391,9 @@ fetch('https://www.googleapis.com/blogger/v3/blogs/1953737097095782065/posts?key
         const src = item.content.match(/<img[^>]*src="([^"]*)"/)?.[1];
             const href = item.content.match(/<a[^>]*href="([^"]*)"/)?.[1];
             
-            populateGraphicElement.innerHTML +=  `<div class="w-full md:w-1/2 p-4 bg-white">
+            populateGraphicElement.innerHTML +=  `<div class="w-full md:w-1/2 p-4 bg-white shadow-lg my-5">
             <div class="relative">
-            <span class="absolute left-0 bottom-0 bg-black text-white py-1 px-3 tx-sm" id="labels">${item.labels}</span>
-            <img src="${src}" alt="Image 1"  class="w-full h-64 object-cover mb-4">
+            <img src="${src}" alt="${item.title}"  class="w-full h-64 object-cover mb-4">
             </div>
             <a href="${href}" target="_blank"><h2 class="text-xl font-bold mb-2" id="title">${item.title}</h2></a>
             <p class="flex items-center justify-left mb-4"
