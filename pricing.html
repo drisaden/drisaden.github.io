@@ -174,6 +174,9 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
                     web design and internet marketing, I offer a comprehensive range of services tailored to meet your
                     unique needs such as Web design, Graphic design, Social media ads & Account management, Affiliate
                     marketing Funnel setup, Ghostwriting, e.t.c</p>
+                    
+                   <a href="./index.html"
+                    class="block transition duration-300 inline-block text-white bg-diamond btn-hover mt-10 py-4 px-7 rounded-md font-bold text-2xl tx-mont mb-10 text-center mx-auto">View My Portfolio</a>
 
                 <p class="mt-10 text-2xl tx-mont leading-8 font-bold tracking-wide text-red-800">
                     Below are the services and their respective pricing. Feel free to go through them and pick a service
@@ -1716,10 +1719,10 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
                                     <p class="tx-lg text-sm text-gray-600 text-center px-2 mb-1">Establish yourself as an authority in your niche with an expertly crafted ebook. I will create a visually appealing and valuable ebook that attracts and engages your target audience. </p>
                                     <div class="mt-7">
                                         <span
-                                            class="inline-block mr-1 line-through text-2xl tx-lg font-light current-amount">$490</span>
+                                            class="inline-block mr-1 line-through text-2xl tx-lg font-light current-amount">$150</span>
                                         <span
                                             class="inline-block font-extrabold tx-2xl tx-diamond text-4xl mr-1 current-amount"
-                                            data-target="eighteen">$208</span>
+                                            data-target="eighteen">$50</span>
                                         <span class="block p-0 m-0 text-gray-400 tx-mont">/per ebook</span>
                                         <small
                                             class="tx-mont font-bold text-xs text-white p-1 pl-5 m-2  block absolute top-48 md:top-40 -right-2 text-center bg-cover bg-no-repeat bg-center"
@@ -1767,6 +1770,8 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
 
             <!-- <div class="bar h-1 w-28 bg-diamond-3 mt-2 mb-10 sm:mx-4 md:mx-auto relative rounded-full">
             </div> -->
+            <a href="./projects.html"
+                    class="block transition duration-300 inline-block text-white bg-diamond btn-hover py-4 px-7 rounded-md font-bold text-2xl tx-mont mb-10 text-center mx-auto">EXPLORE MY PAST AND RECENT PROJECTS</a>
 
         </section>
 
@@ -2454,7 +2459,7 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
 
             for (var i = 0; i < currentAmounts.length; i++) {
                 var amount = parseFloat(currentAmounts[i].innerHTML.replace('$', ''));
-                var updatedAmount = amount * 750;
+                var updatedAmount = amount * 1000;
                 var abbreviatedAmount = abbreviateAmount(updatedAmount);
                 currentAmounts[i].innerHTML = '₦' + abbreviatedAmount;
 
@@ -2493,7 +2498,7 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
             var breakdownAmounts = document.getElementsByClassName('breakdown-amount');
             for (var j = 0; j < breakdownAmounts.length; j++) {
                 var breakdownAmount = parseFloat(breakdownAmounts[j].innerHTML.replace('$', ''));
-                var updatedBreakdownAmount = breakdownAmount * 750;
+                var updatedBreakdownAmount = breakdownAmount * 1000;
                 breakdownAmounts[j].innerHTML = '₦' + abbreviateAmount(updatedBreakdownAmount);
 
             }
@@ -2546,7 +2551,7 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
             var customBtns = [...document.getElementsByClassName('custom-btn')];
             for (var i = 0; i < currentAmounts.length; i++) {
                 var amount = parseFloat(currentAmounts[i].innerHTML.replace('₦', ''));
-                var updatedAmount = amount / 750;
+                var updatedAmount = amount / 1000;
                 var roundedAmount = Math.round(((updatedAmount * 1000) * 100) / 100); // Round off to the nearest whole number
                 // console.log(roundedAmount)
                 currentAmounts[i].innerHTML = '$' + roundedAmount;
@@ -2578,7 +2583,7 @@ src="https://www.facebook.com/tr?id=688072996507288&ev=PageView&noscript=1"
             var breakdownAmounts = document.getElementsByClassName('breakdown-amount');
             for (var j = 0; j < breakdownAmounts.length; j++) {
                 var breakdownAmount = parseFloat(breakdownAmounts[j].innerHTML.replace('₦', ''));
-                var updatedBreakdownAmount = breakdownAmount / 750;
+                var updatedBreakdownAmount = breakdownAmount / 1000;
                 breakdownAmounts[j].innerHTML = '$' + Math.round(((updatedBreakdownAmount * 1000) * 100) / 100);
             }
         }
