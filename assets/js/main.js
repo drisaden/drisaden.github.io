@@ -181,7 +181,7 @@ const form = document.querySelector('#hire-form');
 const submitBtn = document.querySelector('#submit-btn');
 const modal = document.querySelector('#modal');
 
-form.addEventListener('submit', (e) => {
+/*form.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(form);
     const xhr = new XMLHttpRequest();
@@ -201,7 +201,7 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.classList.add('hidden');
     }
-});
+});*/
 
         function toggleShow(targetId) {
             var target = document.getElementById(targetId);
