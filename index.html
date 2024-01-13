@@ -465,7 +465,7 @@
                                                     <div class="w-full mr-10 sm:pl-8">
                                                         <div class="p-4 bg-white rounded shadow">
                                                             <span
-                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019</span><br>
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2019-2023</span><br>
                                                             <span class="text-base tx-base tx-base">Computer Literacy at
                                                                 Lafarge
                                                                 PLC</span>
@@ -507,6 +507,24 @@
                                                             stroke-width="2"
                                                             d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                                     </svg> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                                <div class="mt-6 sm:mt-0 sm:mb-12">
+                                            <div class="flex flex-col sm:flex-row items-center">
+                                                <div class="ml-5 flex justify-start w-full mx-auto items-center">
+                                                    <div class="w-full mr-10 sm:pl-8">
+                                                        <div class="p-4 bg-white rounded shadow">
+                                                            <span
+                                                                class="bg-blue-100 tx-diamond tx-sm font-medium mr-2 px-2.5 ml-7 md:ml-2 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">2023-Current</span><br>
+                                                            <span class="text-base tx-base tx-base">Doctor of Pharmacy at Bayero University Kano</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="rounded-full bg-blue-500 border-white text-white border-4 h-12 w-12 absolute left-9 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                                                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1438,7 +1456,7 @@
 fetch('https://www.googleapis.com/blogger/v3/blogs/4195482384384708356/posts?key=AIzaSyAH6Wex5qpSlUeNOds4OvtCSuoUK8c66kY')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+       // console.log(data);
         const recentItems = data.items.filter(item => item.labels.includes('Recent')).slice(0, 3);
 
         const populateRecentElement = document.getElementById('populate-Recent');
