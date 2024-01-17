@@ -50,7 +50,7 @@ window.addEventListener("scroll", () => {
     startAnimation = true;
     progressBarList.forEach((progressBar, index) => {
       let progressValue = 0;
-      let progressEndValue = parseInt(valueContainerList[index].textContent);
+      let progressEndValue = parseInt(valueContainerList[index].value);
 
       let progress = setInterval(() => {
         progressValue++;
