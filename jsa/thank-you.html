@@ -10,47 +10,73 @@
             content="Web design, programming, Sales funnel, nascent creator, landing page, Wordpress, web development">
         <meta name="author" content="Drisaden: The Marketing Jewel">
         <title>You're on your way to The Jewellic Skills Academy!</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css"
+            rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link  href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
             rel="stylesheet">
-            <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="icon" type="image/png" href="./images/fav_ico.jpg">
-       </head>
-    
-<body>
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md p-8 bg-white rounded shadow-lg">
-            <div class="text-center mb-6">
-                <h1 class="text-3xl font-bold text-gray-800">Congratulations, <span id="firstName" class="text-primary"></span>. You're now qualified to be part of the pioneer students of the Jewellic Skills Academy</h1>
+    </head>
+
+    <body>
+        <div class="min-h-screen flex items-center justify-center bg-gray-100">
+            <div class="max-w-md p-8 bg-white rounded shadow-lg">
+                <div class="text-center mb-6">
+                    <h1
+                        class="text-3xl font-bold text-gray-800">Congratulations,
+                        <span id="firstName" class="text-primary"></span>.
+                        You're now qualified to be part of the pioneer students
+                        of the Jewellic Skills Academy</h1>
+                </div>
+                <div class="mb-6">
+                    <p class="text-gray-700">I appreciate you joining the
+                        pre-launching of this glorious academy. Click the links
+                        to join the community channels</p>
+                </div>
+            <div class="w-full h-full flex flex-col md:flex-row justify-between items-center">
+                <!-- WhatsApp -->
+                <div class="flex flex-col justify-center items-center w-full md:w-4/12 mx-auto my-5">
+                    <a href="https://whatsapp.com/channel/0029VahbjSkCXC3G5a7YZM2U" target="_blank"
+                        class="text-green-500 hover:text-green-700 text-center">
+                        <i class="fab fa-whatsapp text-5xl text-green-500 hover:text-green-500"></i>
+                        <span class="block"> WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Telegram -->
+                <div class="flex flex-col justify-center items-center w-full md:w-4/12 mx-auto my-10">
+
+                    <a href="#" class="text-blue-400 hover:text-blue-600 text-center">
+                        <i class="fab fa-telegram-plane text-5xl text-blue-400 hover:text-blue-400"></i>
+                        <span class="block"> Telegram</span>
+                    </a>
+                </div>
             </div>
-            <div class="mb-6">
-                <p class="text-gray-700">I appreciate you joining the pre-launching of this glorious academy. Kindly confirm your membership from your email inbox. The links to the community channels will be sent to you shortly after you've confirmed your membership </p>
-            </div>
-            <div class="text-center">
-                <a href="https://adenaikeidris.com.ng/jsa" class="inline-block bg-diamond text-white px-4 py-2 rounded-full transition-colors duration-300 hover:bg-blue-600">Go
-                    Back to Home</a>
             </div>
         </div>
-    </div>
 
-    <script>
-      const urlParams = new URLSearchParams(window.location.search);
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const firstName = urlParams.get('first_name');
+        const email = urlParams.get('email');
+        const subscriberID = urlParams.get('ck_subscriber_id');
 
-const firstName = urlParams.get('first_name');
-const email = urlParams.get('email');
-const subscriberID = urlParams.get('ck_subscriber_id');
-
+function showPage(){
 document.getElementById('firstName').textContent = firstName || "Not Found";
 document.getElementById('email').textContent = email || "Not Found";
 document.getElementById('subscriberID').textContent = subscriberID || "Not Found";
-
+}
+setInterval('showPage', 10);
     </script>
-</body>
+    </body>
 </html>
-
-
-
-
-https://adenaikeidris.com.ng/jsa/thank-you?first_name=Bolu&email=adenaikeidris01%40gmail.com&ck_subscriber_id=2008661820
